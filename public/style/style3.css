@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #021a00;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 1em;
+  margin: 0 auto;
+  border-top: 1px solid black;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.background .shape {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  background: linear-gradient(#1b6436, #96d1ac);
+  left: -70px;
+  top: -40px;
+}
+
+.shape:last-child {
+  background: linear-gradient(to right, #9ebb6b, #dcf1b8);
+  right: -70px;
+  bottom: 0px;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+.login_card {
+  position: relative;
+  width: 400px;
+  background: #dcdcdc;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-radius: 1em;
+}
+.login_content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.login_content h2 {
+  font-size: 2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.login_content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.login_content form .text_box {
+  position: relative;
+  width: 100%;
+  background: #b2b2b2;
+  border: none;
+  outline: none;
+  padding: 13px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.card {
+  margin: 1em 0;
+  border: 1px black solid;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 20px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.card:link {
+  text-decoration: none;
+  text-decoration-color: black;
+}
+.card:visited {
+  text-decoration: none;
+  text-decoration-color: black;
+}
+.card:active {
+  text-decoration: none;
+  text-decoration-color: black;
+}
+.card article {
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  padding: 1em;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.card .materiel_card .haut {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.card .medic_card .haut:first-child {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+.card article .bas {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+.card article .bas .description {
+  grid-column-start: 1;
+}
+.card article .bas form {
+  grid-column-start: -1;
+}
+
+.card .utilisateur_card {
+  width: 20rem;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.search .searchTextBox {
+  width: 30em;
+  height: 3em;
+  border: 1px solid black;
+  border-radius: 3em 0 0 3em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.search .searchButton {
+  width: 3em;
+  height: 3em;
+  border: 1px solid black;
+  border-left: none;
+  background: #93a375;
+  text-align: center;
+  color: white;
+  border-radius: 0 3em 3em 0;
+  cursor: pointer;
+  padding-right: 2em;
+}
+.search .searchButton img {
+  width: 2em;
+  height: 2em;
+}
+
+.ajout_panier {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.ajout_panier .numeric_ajout_panier {
+  width: 5em;
+  height: 2em;
+  padding: 0.5em;
+  border: 1px #868686 solid;
+  border-right: none;
+  border-radius: 2em 0 0 2em;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.ajout_panier .bouton_ajout_panier {
+  width: 10em;
+  height: 2em;
+  border-left: none;
+  border-radius: 0 2em 2em 0;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.ajout_panier .bouton_ajout_panier:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.choix_de_page {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin: 2em 0;
+  align-items: center;
+}
+.choix_de_page button {
+  width: 3em;
+  height: 3em;
+  border: 1px #8a8a8a solid;
+  margin: 0;
+  background-color: white;
+}
+.choix_de_page button:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+.choix_de_page button:first-child {
+  border-top-left-radius: 3em;
+  border-bottom-left-radius: 3em;
+}
+.choix_de_page button:last-child {
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
+
+.mainListUtilisateur {
+  width: 95vh;
+  min-height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.form_profile_vue_admin {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  align-items: center;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard_card {
+  margin: 5rem;
+  border: 1px solid #7c7c7c;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  height: 18em;
+}
+
+.dashboard_card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard_card a img {
+  width: 10em;
+  margin: 1em;
+}
+
+.dashboard_card a h3 {
+  margin: 1em;
+}
